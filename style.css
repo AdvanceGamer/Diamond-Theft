@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Rampart+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito:ital,wght@0,200;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700;1,800&family=Rampart+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Indie+Flower&family=Irish+Grover&family=Nunito:ital,wght@0,200;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700;1,800&family=Rampart+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  user-select: none;
+}
+
+body {
+  height: 100vh;
+  background-image: url("https://t4.ftcdn.net/jpg/04/63/22/67/240_F_463226737_t2tIoJ1l9jGbkYSEP6Hv3Ji1n0Ovax4T.jpg");
+   /* background-image: url("https://t3.ftcdn.net/jpg/02/45/11/70/240_F_245117066_omzS6QIf4y198Z1sCwkG24Vp7FX0BM9q.jpg");  */
+  /* background-image: url("https://t4.ftcdn.net/jpg/04/54/10/77/240_F_454107707_kwDQNtXvrgWIslM7MfAbA62IcUtlIgxF.jpg"); */ 
+}
+
+header {
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  padding: 25px;
+}
+
+.game-name {
+  font-family: "Rampart One", cursive;
+  background-color: #e4ece7;
+  padding: 2px 15px;
+  font-size: 35px;
+  border-radius: 39px;
+  padding-bottom: 10px;
+}
+
+.main {
+  display: flex;
+  width: 100vw;
+  margin-top: 10vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* .main > button {
+  border: none;
+  padding: 5px 10px;
+  background-color: #6495ed;
+  border-radius: 4px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  transition: all 100ms linear;
+  cursor: pointer;
+}
+
+.main > button:hover {
+  background-color: #00008ba8;
+}
+.main > button:active {
+  background-color: #6495ed;
+} */
+.arena {
+  width: 50vw;
+  height: 50vh;
+  /* background-color: #0001ff59; */
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+
+.block {
+  text-align: center;
+  font-size: 25px;
+  background-color: #c5d5cb75;
+  /* border: 1px solid black; */
+  border: 1.2px solid #205c4429;
+  transition: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.activeLayer {
+  background-color: #c5d5cb;
+  cursor: pointer;
+}
+
+.activeLayer:hover {
+  background-color: #fc0000b3;
+}
+
+#liv {
+  font-family: "Irish Grover", cursive;
+  font-size: 28px;
+  color: #ffffff;
+
+}
+
+
+#wonContainer , #loseContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+#wonButtonContainer , #loseButtonContainer{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 22px;
+}
+
+
+
+
+.button-33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.5) rotate(-360deg);
+}
+
