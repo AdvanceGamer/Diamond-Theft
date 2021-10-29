@@ -304,7 +304,7 @@ const menu = () => {
 const youLose = () => {
     layerincrement = 1;
     document.getElementById('main').innerHTML = `<div id="loseContainer">
-    <img src="/gif/giphy.gif" />
+    <img src="giphy.gif" />
     <div id="loseButtonContainer">
     <button class="button-33" role"button" id="menu">Menu</button>
     <button class="button-33" role"button" id="replay">Replay</button>
