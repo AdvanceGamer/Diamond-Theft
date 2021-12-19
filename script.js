@@ -1,3 +1,12 @@
+alert(`Rules To Play The Game 
+There are 4 random doors in each layer 
+From which 3 are wrong & 1 is true 
+You have to find the right one 
+Life will be decrease if wrong door is clicked 
+You have to reach to the diamond 
+Thank You`);
+
+
 
 var level1 = document.getElementById('level1');
 var level2 = document.getElementById('level2');
@@ -92,7 +101,7 @@ const setDoors1 = (row, min, max) => {
     let randomPosition_col = Math.floor((Math.random() * (max - min + 1)) + min);
     // document.getElementById(`block-${row}-${randomPosition_col}`).innerHTML = '<img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-door-furniture-kiranshastry-lineal-color-kiranshastry.png" height="106%"/>';
     door1 = document.getElementById(`block-${row}-${randomPosition_col}`);
-    door1.innerHTML = '<img src="closeddoor.jpg" height="106%"/>';
+    door1.innerHTML = '<img src="https://drive.google.com/uc?export=view&id=1guH99S-BxtrW6Zv3NWz0YuBWGwVCDIOq" height="106%"/>';
     door1.classList += ' door1Val';
     door1.firstChild.classList += 'temp door1Val';
     door1.addEventListener("click", layerCheck);
@@ -103,7 +112,7 @@ const setDoors2 = (row, min, max) => {
     let randomPosition_col = Math.floor((Math.random() * (max - min + 1)) + min);
     //  document.getElementById(`block-${row}-${randomPosition_col}`).innerHTML = '<img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-door-furniture-kiranshastry-lineal-color-kiranshastry.png" height="106%"/>';
     door2 = document.getElementById(`block-${row}-${randomPosition_col}`);
-    door2.innerHTML = '<img src="closeddoor.jpg" height="106%"/>';
+    door2.innerHTML = '<img src="https://drive.google.com/uc?export=view&id=1guH99S-BxtrW6Zv3NWz0YuBWGwVCDIOq" height="106%"/>';
     door2.classList += ' door2Val';
     door2.firstChild.classList += 'temp door2Val';
     door2.addEventListener("click", layerCheck);
@@ -113,7 +122,7 @@ const setDoors3 = (col, min, max) => {
     let randomPosition_row = Math.floor((Math.random() * (max - min + 1)) + min);
     //  document.getElementById(`block-${randomPosition_row}-${col}`).innerHTML = '<img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-door-furniture-kiranshastry-lineal-color-kiranshastry.png" height="106%"/>';
     door3 = document.getElementById(`block-${randomPosition_row}-${col}`);
-    door3.innerHTML = '<img src="closeddoor.jpg" height="106%"/>';
+    door3.innerHTML = '<img src="https://drive.google.com/uc?export=view&id=1guH99S-BxtrW6Zv3NWz0YuBWGwVCDIOq" height="106%"/>';
     door3.classList += ' door3Val';
     door3.firstChild.classList += 'temp door3Val';
     door3.addEventListener("click", layerCheck);
@@ -127,7 +136,7 @@ const setDoors4 = (col, min, max) => {
     let randomPosition_row = Math.floor((Math.random() * (max - min + 1)) + min);
     // document.getElementById(`block-${randomPosition_row}-${col}`).innerHTML = '<img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-door-furniture-kiranshastry-lineal-color-kiranshastry.png" height="106%"/>';
     door4 = document.getElementById(`block-${randomPosition_row}-${col}`);
-    door4.innerHTML = '<img src="closeddoor.jpg" height="106%"/>';
+    door4.innerHTML = '<img src="https://drive.google.com/uc?export=view&id=1guH99S-BxtrW6Zv3NWz0YuBWGwVCDIOq" height="106%"/>';
     door4.classList += ' door4Val';
     door4.firstChild.classList += 'temp door4Val';
     door4.addEventListener("click", layerCheck);
@@ -142,26 +151,26 @@ const setDoors4 = (col, min, max) => {
 const disableDoors1 = () => {
 
 
-    door1.innerHTML = '<img src="openeddoor.jpg" height="106%"/>';
+    door1.innerHTML = '<img src="https://drive.google.com/uc?export=view&id=1WT33uj-SPRHILQNNlm2vZMhM_R2xNyMk" height="106%"/>';
     door1.removeEventListener("click", layerCheck);
 
 }
 
 const disableDoors2 = () => {
 
-    door2.innerHTML = '<img src="openeddoor.jpg" height="106%"/>';
+    door2.innerHTML = '<img src="https://drive.google.com/uc?export=view&id=1WT33uj-SPRHILQNNlm2vZMhM_R2xNyMk" height="106%"/>';
     door2.removeEventListener("click", layerCheck);
 }
 
 const disableDoors3 = () => {
 
-    door3.innerHTML = '<img src="openeddoor.jpg" height="106%"/>';
+    door3.innerHTML = '<img src="https://drive.google.com/uc?export=view&id=1WT33uj-SPRHILQNNlm2vZMhM_R2xNyMk" height="106%"/>';
     door3.removeEventListener("click", layerCheck);
 }
 
 
 const disableDoors4 = () => {
-    door4.innerHTML = '<img src="openeddoor.jpg" height="106%"/>';
+    door4.innerHTML = '<img src="https://drive.google.com/uc?export=view&id=1WT33uj-SPRHILQNNlm2vZMhM_R2xNyMk" height="106%"/>';
     door4.removeEventListener("click", layerCheck);
 }
 
@@ -304,7 +313,7 @@ const menu = () => {
 const youLose = () => {
     layerincrement = 1;
     document.getElementById('main').innerHTML = `<div id="loseContainer">
-    <img src="giphy.gif" />
+    <img src="https://drive.google.com/uc?export=view&id=1OB-Hoxdpak7oG9h-bHfMlC001ECctUDH" />
     <div id="loseButtonContainer">
     <button class="button-33" role"button" id="menu">Menu</button>
     <button class="button-33" role"button" id="replay">Replay</button>
@@ -323,13 +332,13 @@ const youLose = () => {
 
 
     // let menuButton=`<button id="menu">Menu</button>`;
-    // document.getElementById('main').innerHTML=`<img src="better-luck-next-time-loser-george-clooney.gif" height="300px"/>`;
+    // document.getElementById('main').innerHTML=`<img src="/gif/better-luck-next-time-loser-george-clooney.gif" height="300px"/>`;
 }
 
 const youWon = () => {
     layerincrement = 1;
     document.getElementById('main').innerHTML = `<div id="wonContainer">
-    <img src="NewBelovedComet-max-1mb.gif" height="300px"/>
+    <img src="https://drive.google.com/uc?export=view&id=1vqMfKl8myfdEDhG2r3VALLTrErlBcC8U" height="300px"/>
     <div id="wonButtonContainer">
     <button class="button-33" role="button" id="menu">Menu</button>
     <button class="button-33" role="button" id="replay">Replay</button>
