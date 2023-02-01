@@ -1,2 +1,2 @@
 # Diamond-Theft
-My First Game with html,Css,JavaScript.
+Stole The Diamond with your luck
